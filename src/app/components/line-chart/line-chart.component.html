@@ -1,0 +1,17 @@
+<div style="width: 500px; height: 500px;">
+  <div style="display: block; width: 500px; height: 500px;">
+    <canvas
+      baseChart
+      width="300"
+      height="300"
+      [datasets]="lineChartData"
+      [labels]="lineChartLabels"
+      [colors]="lineChartColors"
+      [legend]="lineChartLegend"
+      [chartType]="lineChartType"
+      [plugins]="lineChartPlugins"
+    >
+    </canvas>
+  </div>
+  <button (click)="random()" class="btn btn-outline-primary">Random</button>
+</div>
